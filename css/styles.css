@@ -70,6 +70,7 @@
     
     .site-nav .list {
         color: var(--accent-text-color);
+        font-weight: 500;
     }
     
     .site-nav .list:hover,
@@ -78,12 +79,14 @@
     }
     
     .auth-nav .list {
-        color: var(--accent-text-color);
+        color: var(--aside-text);
+        font-weight: 500;
     }
     
     .widget__link {
         color: var(--aside-text);
         text-decoration: none;
+        font-weight: 500;
     }
     
     .auth-nav .list:hover,
