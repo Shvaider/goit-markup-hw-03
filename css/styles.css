@@ -181,6 +181,7 @@
     /*button*/
     .main-button {
         position: absolute;
+        margin-top: 50px;
         border: none;
         cursor: pointer;
         align-items: center;
@@ -192,7 +193,7 @@
         background: var(--accent-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-        margin-top: 30px;
+        
     }
     .main-button-text {
         font-family: var(--accent-text);
@@ -200,7 +201,6 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
-        display: flex;
         text-align: center;
         letter-spacing: 0.06em;
         color: var(--accent-background-color);
