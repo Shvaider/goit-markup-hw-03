@@ -234,6 +234,13 @@
         list-style: none;
         flex-direction: row;
     }
+    .section-content-item {
+        flex-basis: calc((100% - 90px) /4);
+        margin-right: 30px;
+    }
+    .section-content-item:nth-child(4n) {
+        margin-right: 0;
+    }
     .section-content-subtitle {
         font-family: var(--accent-text);
         font-size: 14px;
