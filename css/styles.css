@@ -31,10 +31,7 @@
         font-style: normal;
     }
     /* header */
-    .page-header {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
+    
     .header-nav-container {
         display: flex;
         align-items: center;
@@ -154,12 +151,8 @@
     }
     
     /* hero */
-    .section-main {
+    .section-main  {
         background-color: #2f303a;
-        width: 1600px;
-        height: 600px;
-        left: 0px;
-        top: 80px;
     }
     .section-main-caption {
         font-family: var(--accent-text);
@@ -174,44 +167,39 @@
         color: var(--accent-background-color);
         margin: 0 auto;
     }
-    .advantage-conteiner {
+    .advantage-container {
+        text-align: center;
         padding-top: 200px;
-        padding-bottom: 280px;
+        padding-bottom: 200px;
     }
     /*button*/
     .main-button {
-        position: absolute;
-        margin-top: 50px;
-        border: none;
-        cursor: pointer;
-        align-items: center;
-        min-width: 136px;
-        min-height: 50px;
-        padding: 10px 30px;
-        left: 855px;
-        top: 430px;  
-        background: var(--accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        
-    }
-    .main-button-text {
+        display: inline-block;
         font-family: var(--accent-text);
+        min-width: 200px;
+        min-height: 50px;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
         text-align: center;
         letter-spacing: 0.06em;
+        margin-top: 30px;
+        left: 700px;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+        padding: 10px 30px;
+        background: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
         color: var(--accent-background-color);
-    }
-    .main-button-text:hover,
-    .main-button-text:focus {
-        color: var(--accent-text-color);
+        
     }
     .main-button:hover,
     .main-button:focus {
         background: var(--accent-background-color);
+        color: var(--accent-text-color);
     }
     
     .visually-hidden {
@@ -225,7 +213,7 @@
         clip: rect(0 0 0 0);
     }
     /*end button*/
-    .section {
+    .section-main-content {
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -257,8 +245,8 @@
         color: var(--aside-text);
     }
     /*Чем мы занимаемся*/
-    .container-img{
-        padding-bottom: 94px;
+    .content-image {
+        padding-top: 0;
     }
     .subject {
         margin-bottom: 50px;
@@ -279,8 +267,6 @@
     }
     /*наша команда*/
     .portfolio {
-        padding-top: 94px;
-        padding-bottom: 94px;
         background: #F5F4FA;
     }
     .description {
@@ -303,7 +289,11 @@
         flex-basis: calc((100% - 120px) /4);
         margin-left: 30px;
         margin-top: 30px;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
         background: var(--accent-background-color);
+        
     }
     .user-name {
         padding-top: 32px;
@@ -327,11 +317,9 @@
         color: var(--aside-text);
     }
     /*footer*/
-    .footer-conteiner-section {
+    .footer-container-section {
         padding-top: 60px;
         padding-bottom: 60px;
-        padding-left: 215px;
-        padding-right: 15px;
     }
     .logo-footer {
         margin-bottom: 20px;
@@ -341,7 +329,6 @@
     }
     .footer {
         background: #2F303A;
-        width: 1600px;
     }
     .footer a {
         text-decoration: none;
@@ -391,14 +378,14 @@
         color: var(--accent-color);
     }
     /*=====portfolio=====*/
-    /*button*/
-    .section-buttons {
-        padding-top: 100px;
-        margin-bottom: 56px;
+    .page-header {
+        border: 1px solid #ECECEC;
     }
-    .main-section {
-        background-color: var(--accent-color-portfolio);
+    /*button*/
+    .section-content-portfolio {
+        padding-top: 94px;
         padding-bottom: 94px;
+        background-color: var(--accent-background-color);
     }
     .button-list {
         display: flex;
@@ -410,31 +397,32 @@
     .buttons-item:not(:last-child) {
         margin-right: 8px;
     }
-    .section-button-title {
+    .section-title {
         display: none;
     }
     .button-item {
-        border: none;
-        cursor: pointer;
-        border-radius: 4px;
-        background: var(--background-color-buttons);
-    
-    }
-    .main-button-desc {
+        padding-top: 6px;
+        padding-right: 22px;
+        padding-bottom: 6px;
+        padding-left: 22px;
         font-family: var(--accent-text);
+        font-weight: 500;
+        text-align: center;
         font-style: normal;
         font-size: 16px;
         line-height: 1.62;
         letter-spacing: 0.03em;
-        color: var(--accent-text-color);
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        background: var(--accent-color);
+        color: var(--accent-background-color);
     }
     .button-item:hover,
     .button-item:focus {
-        background: var(--accent-color);
-    }
-    .main-button-desc:hover,
-    .main-button-desc:focus {
-        color: var(--accent-background-color)
+        background: var(--background-color-buttons);
+        color: var(--accent-text-color);
     }
     /*img*/
     .img-item-link {
@@ -442,7 +430,6 @@
     }
     .section-img-list {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         list-style: none;
         margin-right: -30px;
@@ -451,8 +438,6 @@
 
     .img-item {
         background: var(--accent-background-color);
-        width: 370px;
-        border: 1px solid #EEEEEE;
         margin-right: 30px;
         margin-bottom: 30px;
     }
@@ -461,7 +446,6 @@
         padding-right: 24px;
         padding-bottom: 20px;
         padding-left: 24px;
-        border: 1px solid #eeeeee;
         border-top: none;
     }
     .section-img-desc {
