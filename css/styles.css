@@ -133,6 +133,15 @@
     .contact-item {
         margin-right: 50px;
     }
+    .contact-item::before {
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        background-image: url(/images/hover.svg);
+        width: 16px;
+        height: 12px;
+        color: var(--aside-text);
+    }
     .nav-contact-item {
         text-decoration: none;
         color: var(--aside-text);
@@ -141,6 +150,15 @@
         color: var(--aside-text);
         text-decoration: none;
         font-weight: 500;
+    }
+    .widget__link::before {
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        background-image: url(/images/Vector.svg);
+        width: 10px;
+        height: 16px;
+        color: var(--aside-text);
     }
     
     .auth-nav-list .nav-contact-item:hover,
@@ -152,6 +170,10 @@
     
     /* hero */
     .section-main  {
+        text-align: center;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: url(/images/Img.jpg);
         background-color: #2f303a;
     }
     .section-main-caption {
@@ -168,9 +190,7 @@
         margin: 0 auto;
     }
     .advantage-container {
-        text-align: center;
-        padding-top: 200px;
-        padding-bottom: 200px;
+        
     }
     /*button*/
     .main-button {
@@ -316,10 +336,12 @@
         letter-spacing: 0.03em;
         color: var(--aside-text);
     }
+    /*Постоянные клиетны*/
+    .svg-list {
+        list-style: none;
+    }
     /*footer*/
     .footer-container-section {
-        padding-top: 60px;
-        padding-bottom: 60px;
     }
     .logo-footer {
         margin-bottom: 20px;
@@ -328,6 +350,8 @@
         margin-top: 20px;
     }
     .footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
         background: #2F303A;
     }
     .footer a {
@@ -377,9 +401,18 @@
     .footer-item-link:focus {
         color: var(--accent-color);
     }
+
+    .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+      }
     /*=====portfolio=====*/
     .page-header {
-        border: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;
     }
     /*button*/
     .section-content-portfolio {
@@ -416,13 +449,13 @@
         cursor: pointer;
         border-radius: 4px;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        background: var(--accent-color);
-        color: var(--accent-background-color);
+        background: var(--background-color-buttons);
+        color: var(--accent-text-color);
     }
     .button-item:hover,
     .button-item:focus {
-        background: var(--background-color-buttons);
-        color: var(--accent-text-color);
+        background :var(--accent-color);
+        color: var(--accent-background-color);
     }
     /*img*/
     .img-item-link {
@@ -442,6 +475,9 @@
         margin-bottom: 30px;
     }
     .portfolio-description {
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
         padding-top: 20px;
         padding-right: 24px;
         padding-bottom: 20px;
