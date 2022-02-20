@@ -27,10 +27,20 @@
                     <li class="item"><a href="" class="nav-list-link">Контакты</a></li>
                 </ul>
             </nav>
-                <ul class="auth-nav-list">
-                    <li class="contact-item"><a href="mailto:info@devstudio.com" class="nav-contact-item">info@devstudio.com</a></li>
-                    <li  class="widget__link"><a href="tel:+380961111111" class="nav-contact-item">+38(096) 111-11-11</a></li>
-                </ul>
+            <ul class="auth-nav-list">
+                <li class="contact-item"><a href="mailto:info@devstudio.com" class="nav-contact-item" target="_blank" rel="noreferrer noopener">
+                        <svg class="contact-item-icon" width="16" height="12">
+                            <use href="/images/sprite-header.svg#icon-hover"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a></li>
+                <li class="widget__link"><a href="tel:+380961111111" class="nav-contact-item" target="_blank" rel="noreferrer noopener">
+                        <svg class="contact-item-icon" width="10" height="16">
+                            <use href="/images/sprite-header.svg#icon-Vector"></use>
+                        </svg>
+                        +38(096) 111-11-11
+                    </a></li>
+            </ul>
         </div>
     </header>
     <!--button-->
@@ -133,19 +143,57 @@
     </main>
     <!--footer-->
     <footer class="footer">
-        <div class="footer-container-section container">
-            <a href="https://www.webstudio.kiev.ua/" class="logo-footer"><span class="slogan">Web</span><span class="footer-slogan">Studio</span>
-            </a>
-            <address class="footer-section">
-                <ul class="footer-list">
-                    <li class="footer-main-item"><a href="https://goo.gl/maps/FGa6e7uZkRnRcy78A" target="_blank" rel="noreferrer noopener"
-                            class="footer-item"><span class="footer-item-link">г. Киев, пр-т Леси Украинки, д. 26</span></a>
+        <div class="footer-section-flex container">
+            <div class="footer-container-section">
+                <a href="https://www.webstudio.kiev.ua/" class="logo-footer"><span class="slogan">Web</span><span
+                        class="footer-slogan">Studio</span>
+                </a>
+                <address class="footer-section">
+                    <ul class="footer-list">
+                        <li class="footer-main-item"><a href="https://goo.gl/maps/FGa6e7uZkRnRcy78A" target="_blank"
+                                rel="noreferrer noopener" class="footer-item"><span class="footer-item-link">г. Киев, пр-т Леси
+                                    Украинки, д. 26</span></a>
+                        </li>
+                        <li class="footer-main-item"><a href="mailto:info@example.com" target="_blank" rel="noreferrer noopener"
+                                class="footer-item">info@example.com</a></li>
+                        <li class="footer-main-item"><a href="tel:+380991111111" class="footer-item">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-conteiner-icon">
+                <h5 class="footer-section-link">Присоединяйтесь</h5>
+                <ul class="social-list-socials">
+                    <li class="social-list-item">
+                        <a class="footer-social-list-link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                            <svg class="social-list-icon" width="20" heighth="20">
+                                <use href="/images/symbol-defs.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="footer-main-item"><a href="mailto:info@example.com" target="_blank" rel="noreferrer noopener"
-                            class="footer-item">info@example.com</a></li>
-                    <li class="footer-main-item"><a href="tel:+380991111111" class="footer-item">+38 099 111 11 11</a></li>
+                    <li class="social-list-item">
+                        <a class="footer-social-list-link" href="https://twitter.com/?lang=ru" target="_blank"
+                            rel="noreferrer noopener">
+                            <svg class="social-list-icon" width="16" heighth="20">
+                                <use href="/images/symbol-defs.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="footer-social-list-link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+                            <svg class="social-list-icon" width="10" heighth="20">
+                                <use href="/images/symbol-defs.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-item">
+                        <a class="footer-social-list-link" href="https://ru.linkedin.com/" target="_blank" rel="noreferrer noopener">
+                            <svg class="social-list-icon" width="20" heighth="20">
+                                <use href="/images/symbol-defs.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>

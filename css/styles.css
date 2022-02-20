@@ -6,6 +6,7 @@
     --aside-text: #757575;
     --accent-color-portfolio: #E5E5E5;
     --background-color-buttons: #F5F4FA;
+    --color-pic-containers: #AFB1B8;
     }
     
     h1,
@@ -116,8 +117,6 @@
     .auth-nav-list {
         display: flex;
         margin-left: auto;
-        padding-top: 32px;
-        padding-bottom: 32px;
     }
     .auth-nav-list {
         color: var(--aside-text);
@@ -131,36 +130,34 @@
         letter-spacing: 0.02em;
     }
     .contact-item {
+        padding-top: 32px;
+        padding-bottom: 32px;
         margin-right: 50px;
     }
-    .contact-item::before {
-        content: "";
-        display: inline-block;
-        margin-right: 10px;
-        background-image: url(/images/hover.svg);
-        width: 16px;
-        height: 12px;
-        color: var(--aside-text);
-    }
+    
     .nav-contact-item {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         color: var(--aside-text);
     }
+    
+    .contact-item-icon {
+        height: 16px;
+        fill: var(--aside-text);
+        margin-right: 10px;
+    }
+    .contact-item-icon:hover,
+    .contact-item-icon:focus {
+        fill: var(--accent-color);
+    }
     .widget__link {
+        padding-top: 32px;
+        padding-bottom: 32px;
         color: var(--aside-text);
         text-decoration: none;
         font-weight: 500;
     }
-    .widget__link::before {
-        content: "";
-        display: inline-block;
-        margin-right: 10px;
-        background-image: url(/images/Vector.svg);
-        width: 10px;
-        height: 16px;
-        color: var(--aside-text);
-    }
-    
     .auth-nav-list .nav-contact-item:hover,
     .auth-nav-list .nav-contact-item:focus,
     .auth-nav-list .nav-widget__link:hover,
@@ -173,7 +170,8 @@
         text-align: center;
         padding-top: 200px;
         padding-bottom: 200px;
-        background-image: url(/images/Img.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Img.jpg);
+        background-size: cover;
         background-color: #2f303a;
     }
     .section-main-caption {
@@ -188,9 +186,6 @@
         text-transform: uppercase;
         color: var(--accent-background-color);
         margin: 0 auto;
-    }
-    .advantage-container {
-        
     }
     /*button*/
     .main-button {
@@ -236,6 +231,23 @@
     .section-main-content {
         padding-top: 94px;
         padding-bottom: 94px;
+    }
+  
+    .pic-hero {
+        display: flex;
+        flex-basis: calc((100% - 120px) /4);
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        top: 774px;
+        background: var(--background-color-buttons);
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+   
+    .section-hero-pic {
+        width: 70px;
+        height: 70px;
     }
     .section-content {
         display: flex;
@@ -313,11 +325,12 @@
         border-bottom-left-radius: 4px;
         box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
         background: var(--accent-background-color);
-        
     }
     .user-name {
         padding-top: 32px;
         padding-bottom: 32px;
+        padding-right: 32px;
+        padding-left: 32px;
     }
     .user-desk {
         font-family: var(--accent-text);
@@ -336,13 +349,72 @@
         letter-spacing: 0.03em;
         color: var(--aside-text);
     }
-    /*Постоянные клиетны*/
-    .svg-list {
+    .social-list-socials {
+        display: flex;
+        justify-content: space-between;
         list-style: none;
+        margin-top: 16px;
     }
+    .social-list-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: #AFB1B8;;
+        background-color: var(--accent-background-color);
+    }
+    .social-list-icon {
+        height: 20px;
+    }
+    .social-list-link:hover,
+    .social-list-link:focus {
+        fill: var(--accent-background-color);
+        background-color: var(--accent-color);
+    }
+    /*Постоянные клиетны*/
+    .our-clients {
+        padding-top: 94px;
+        margin-bottom: 94px;
+    }
+    .description {
+        font-family: var(--accent-text);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+        color: var(--accent-text-color);
+    }
+    .svg-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .svg-item {
+        display: flex;
+        flex-basis: calc((100% - 180px) /6);
+        
+    }
+    .svg-icon-item {
+        width: 170px;
+        height: 92px;
+        border: 1px solid var(--color-pic-containers);
+        border-radius: 4px;
+        padding: 16px 32px;
+        background-position: center;
+        fill: var(--color-pic-containers);
+    }
+    .svg-icon-item:hover,
+    .svg-icon-item:focus {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
+    
     /*footer*/
-    .footer-container-section {
-    }
     .logo-footer {
         margin-bottom: 20px;
     }
@@ -409,7 +481,41 @@
         stroke-width: 0;
         stroke: currentColor;
         fill: currentColor;
-      }
+    }
+    .footer-section-flex {
+        display: flex;
+        align-items: baseline;
+    }
+    .footer-container-section {
+        margin-right: 70px;
+    }
+    .footer-section-link {
+        font-family: var(--accent-text);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--accent-background-color);
+    }
+    .social-list-item:not(:nth-child(4n + 1)) {
+        margin-left: 10px;
+    }
+    .footer-social-list-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: var(--accent-background-color);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .footer-social-list-link:hover,
+    .footer-social-list-link:focus {
+        background-color: var(--accent-color);
+    }
     /*=====portfolio=====*/
     .page-header {
         border-bottom: 1px solid #ECECEC;
